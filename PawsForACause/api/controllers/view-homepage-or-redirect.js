@@ -24,7 +24,8 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-
+    let doc = await homepageStats.findOne({name: 'Test'});
+    console.log(doc);
     if (this.req.me) {
       throw {redirect:'/welcome'};
     }

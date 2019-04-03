@@ -52,7 +52,7 @@ module.exports.datastores = {
     // url: 'mysql://user:password@host:port/database',
 
     //adapter: 'sails-mongo',
-    //url: 'mongodb://paws4acauseuser:PASSWORD@paws4acause-cr3il.azure.mongodb.net/paws4acauseDB'
+    url: 'mongodb://paws4acauseuser:PASSWORD@paws4acause-cr3il.azure.mongodb.net/paws4acauseDB'
 
   },
 
