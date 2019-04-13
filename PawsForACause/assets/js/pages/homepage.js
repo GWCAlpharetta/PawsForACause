@@ -20,7 +20,6 @@
       ]
     }
   });
-*/
   new Vue({
     el: '#stats',
     data () {
@@ -51,3 +50,4 @@
         .catch(error => console.log(error))
     }
   });
+  */
