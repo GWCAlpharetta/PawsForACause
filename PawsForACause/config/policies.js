@@ -17,5 +17,10 @@ module.exports.policies = {
   'account/logout': true,
   'view-homepage-or-redirect': true,
   'deliver-contact-form-message': true,
+  HomepageStatsController: {
+    
+    '*':'is-logged-in', 'getStats':true
+  
+  } 
 
 };
