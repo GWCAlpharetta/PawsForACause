@@ -31,9 +31,23 @@ parasails.registerPage('homepage', {
   mounted: async function(){
     this._setHeroHeight(); 
     axios
-        .get('/api/v1/homepage-stats')
+        .get('https://api.coindesk.com/v1/bpi/currentprice.json')
         .then(response => (
-          this.items = response.data
+          this.items = [
+            { cards: [{cardTitle: "card11",cardMessage: "card message 11"},
+                      {cardTitle: "card21",cardMessage: "card message 22"},
+                      {cardTitle: "card31",cardMessage: "card message 33"},
+                      {cardTitle: "card41",cardMessage: "card message 44"},
+                      ]
+            },
+            { cards: [{cardTitle: "cardA",cardMessage: "card message A"},
+                      {cardTitle: "cardB",cardMessage: "card message B"},
+                      {cardTitle: "cardC",cardMessage: "card message C"},
+                      {cardTitle: "cardD",cardMessage: "card message D"},
+                      ]
+            },
+            
+          ]
         ))
         .catch(error => console.log(error))
   },
