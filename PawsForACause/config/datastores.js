@@ -51,8 +51,8 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
 
-    //adapter: 'sails-mongo',
-    url: 'mongodb://paws4acauseuser:PASSWORD@paws4acause-cr3il.azure.mongodb.net/paws4acauseDB'
+    adapter: 'sails-mongo',
+    url: 'mongodb://pawsDBUser:<password>@paws4acause-shard-00-00-cr3il.azure.mongodb.net:27017,paws4acause-shard-00-01-cr3il.azure.mongodb.net:27017,paws4acause-shard-00-02-cr3il.azure.mongodb.net:27017/paws4acauseDB?ssl=true&replicaSet=PAWS4ACause-shard-0&authSource=admin&retryWrites=true'
 
   },
 
