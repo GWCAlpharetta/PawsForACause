@@ -30,7 +30,7 @@
     </div>
   </div>
   
-  <div id = "stats" class="about-wrapper" role="scroll-destination">
+  <div class="about-wrapper" role="scroll-destination">
     
       <div v-for="item in items">
       
@@ -39,9 +39,9 @@
         <div class="col-md-8">
         <div class="card" style="width: 45rem;">
         <div class="card-body">
-          <h5 class="card-title"> {{item.cards[0].cardTitle}}</h5>
+          <h5 class="card-title">{{item.cards[0].cardTitle}}</h5>
           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">{{item.cards[0].cardMessage}}</p>
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
         </div>
@@ -51,7 +51,7 @@
       <div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">{{item.cards[1].cardMessage}}</p>
         </div>
       </div>
     </div>
@@ -63,16 +63,16 @@
           <div class="card" style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">{{item.cards[2].cardMessage}}</p>
               </div>
             </div>
       </div>
       <div class= "col-md-8">
           <div class="card" style="width: 45rem;">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">{{item.cards[3].cardTitle}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">{{item.cards[0].cardMessage}}</p>
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
               </div>

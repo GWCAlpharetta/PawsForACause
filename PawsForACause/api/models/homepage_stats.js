@@ -16,19 +16,19 @@ module.exports = {
     description:{
       type: 'string',
       required: true,
-  },
-  imageCaption:{
+    },
+    imageCaption:{
       type: 'string',
       required: true,
-  },
-  imageUrl: {
+    },
+    imageUrl: {
+      type: 'string',
+      required: false,
+    },
+    name: {
       type: 'string',
       required: true,
-  },
-  name: {
-      type: 'string',
-      required: true,
-  },
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
